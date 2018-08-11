@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+         <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+        <title>AHA</title>
+
+        <link href="assets/css/switchery.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/morris.css">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+        
+    </head>
+
+
+    <body class="fixed-left">
+        
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <div class="text-center">
+                        <a href="index.html" class="logo"><i class="mdi mdi-radar"></i> <span>AHA</span></a>
+                    </div>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <nav class="navbar-custom">
+
+                    <ul class="list-inline float-right mb-0">
+
+                        <li class="list-inline-item notification-list hide-phone">
+                            <a class="nav-link waves-light waves-effect" href="#" id="btn-fullscreen">
+                                <i class="mdi mdi-crop-free noti-icon"></i>
+                            </a>
+                        </li>
+
+                       
+
+                        
+
+                        <li class="list-inline-item dropdown notification-list">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                               aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown " aria-labelledby="Preview">
+                                <!-- item-->
+                                <div class="dropdown-item noti-title">
+                                    <h5 class="text-overflow"><small>Welcome ! John</small> </h5>
+                                </div>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-account-star-variant"></i> <span>Profile</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-settings"></i> <span>Settings</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-lock-open"></i> <span>Lock Screen</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-logout"></i> <span>Logout</span>
+                                </a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-light waves-effect">
+                                <i class="mdi mdi-menu"></i>
+                            </button>
+                        </li>
+                        
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+                            <li class="menu-title">Main</li>
+
+                            <li>
+                                <a href="index.html" class="waves-effect waves-primary"><i
+                                        class="ti-home"></i><span> Dashboard </span></a>
+                            </li>
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="ti-paint-bucket"></i> <span> Health Records </span>
+                                    <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="personal.php">Personal</a></li>
+                                    <li><a href="medhistory.php">Medical History</a></li>
+									 <li><a href="consultation.php">Consultation Note</a></li>
+									 <li><a href="medication.php">Medications</a></li>
+									<li><a href="selfcare.php">Selfcare Episodes</a></li>
+									<li><a href="surgical.php">Surgical Episodes</a></li>
+									<li><a href="hospital.php">Hospital Admissions</a></li>
+									<li><a href="labtest.php">Lab Tests</a></li>
+                                </ul>
+                            </li>
+							 <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="ti-paint-bucket"></i> <span> Assesment </span>
+                                    <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="obesity.php">Obesity</a></li>
+                                    <li><a href="cardiovascular.php">Cardiovascular</a></li>
+									<li><a href="caregiver.php">CareGiver</a></li>
+									<li><a href="neuro.php">Neuro</a></li>
+									<li><a href="diabetes.php">Diabetes</a></li>
+                                </ul>
+                            </li>
+							 <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="ti-paint-bucket"></i> <span> Monitoring </span>
+                                    <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="bloodpressure.php">Blood Pressure</a></li>
+                                    <li><a href="bloodglucose.php">Blood Glucose</a></li>
+									<li><a href="weight.php">Weight</a></li>
+									<li><a href="sleep.php">Sleep</a></li>
+									<li><a href="activity.php">Activity</a></li>
+									<li><a href="sports.php">Sports</a></li>
+                                </ul>
+                            </li>
+
+                            
+
+                        </ul>
+
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->                      
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+
+                        <!-- Page-Title -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">Welcome !</h4>
+                                    <ol class="breadcrumb float-right">
+                                        <li class="breadcrumb-item"><a href="#">AHA</a></li>
+                                        <li class="breadcrumb-item active">Dashboard</li>
+                                    </ol>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="widget-bg-color-icon card-box">
+                                      <div class="text-dark  header-title">Risk</div>
+                                    <div class="text-right">
+                                        <h3 class=""><b class="font-18">Risk factor is any attribute, characteristic or exposure of an individual that increases the likelihood of developing a disease or injury.</b></h3>
+                                      
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <!-- end row -->
+						
+						<div class="row">
+                            <div class="col-md-4">
+                                <div class="card-box">
+                                    <h4 class="text-dark  header-title m-t-0 m-b-30">Blood Pressure</h4>
+
+                                    <div class="widget-chart pull-in text-center">
+                                        <div id="dashboard-chart-1" style="height: 260px;"></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card-box">
+                                    <h4 class="text-dark  header-title m-t-0 m-b-30">Activity</h4>
+
+                                    <div class="widget-chart text-center">
+                                        <div id="dashboard-chart-2" style="height: 260px;"></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card-box">
+                                    <h4 class="text-dark  header-title m-t-0 m-b-30">Calories Burnt</h4>
+
+                                    <div class="widget-chart text-center">
+                                        <div id="dashboard-chart-3" style="height: 260px;"></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+						<div class="row">
+                            <div class="col-md-4">
+                                <div class="card-box">
+                                    <h4 class="text-dark  header-title m-t-0 m-b-30">Blood Glucose</h4>
+
+                                    <div class="widget-chart pull-in text-center">
+                                        <div id="dashboard-chart-4" style="height: 260px;"></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+						<div class="row">
+                            <div class="col-lg-12">
+                                <div class="card-box">
+                                    
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover m-b-0">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>User Id</th>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Phone</th>
+                                                <th>Customer</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Minton Admin v1</td>
+                                                <td>01/01/2016</td>
+                                                <td>26/04/2016</td>
+                                                <td><span class="label label-info">Released</span></td>
+                                                <td>Coderthemes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Minton Frontend v1</td>
+                                                <td>01/01/2016</td>
+                                                <td>26/04/2016</td>
+                                                <td><span class="label label-success">Released</span></td>
+                                                <td>Minton admin</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Minton Admin v1.1</td>
+                                                <td>01/05/2016</td>
+                                                <td>10/05/2016</td>
+                                                <td><span class="label label-pink">Pending</span></td>
+                                                <td>Coderthemes</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Minton Frontend v1.1</td>
+                                                <td>01/01/2016</td>
+                                                <td>31/05/2016</td>
+                                                <td><span class="label label-purple">Work in Progress</span>
+                                                </td>
+                                                <td>Minton admin</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Minton Admin v1.3</td>
+                                                <td>01/01/2016</td>
+                                                <td>31/05/2016</td>
+                                                <td><span class="label label-warning">Coming soon</span></td>
+                                                <td>Coderthemes</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- end row -->
+
+
+                       
+                       
+
+                    </div>
+                    <!-- end container -->
+                </div>
+                <!-- end content -->
+
+                <footer class="footer text-right">
+                    2017 © AHA.
+                </footer>
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+           
+        </div>
+        <!-- END wrapper -->
+
+
+    
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- Plugins  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script><!-- Popper for Bootstrap -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="plugin/switchery.min.js"></script>
+        
+        <!-- Counter Up  -->
+        <script src="plugin/jquery.waypoints.min.js"></script>
+        <script src="plugin/jquery.counterup.min.js"></script>
+
+        <!--Morris Chart-->
+		<script src="plugin/morris.min.js"></script>
+		<script src="plugin/raphael-min.js"></script>
+
+        <!-- Page js  -->
+        <script src="assets/pages/jquery.dashboard.js"></script>
+
+        <!-- Custom main Js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $('.counter').counterUp({
+                    delay: 100,
+                    time: 1200
+                });
+            });
+        </script>
+    
+    </body>
+
+</html>

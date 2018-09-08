@@ -9,6 +9,14 @@
                                 <a href="dashboard.php" class="waves-effect waves-primary"><i
                                         class="ti-home"></i><span> Dashboard </span></a>
                             </li>
+ 			    </li>
+							 <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="ti-paint-bucket"></i> <span> Patient </span>
+                                    <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="addpatient.php">Add Details</a></li>
+                                </ul>
+                            </li>
 
                             <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect waves-primary"><i class="ti-paint-bucket"></i> <span> Health Records </span>
